@@ -46,38 +46,10 @@ seed_everything(42)
 
 - And here are the stats:
 
-
-<img src="media/Nami_activation_ResNet18.png" alt="Nami" width="50%">
-
-**Nami**: 
-Validation Accuracy `94.81`,
-Training Loss `0.0015`,
-Validation Loss `0.1963`
-
-
-<img src="media/Mish_Resnet18.png" alt="Mish" width="50%">
-
-**Mish**:
-Validation Accuracy `94.09`,
-Training Loss `0.0032`,
-Validation Loss `0.2424`
-
-
-<img src="media/Swish_resnet18.png" alt="Swish" width="50%">
-
-**Swish/SiLU**:
-Validation Accuracy `94.06`,
-Training Loss `0.0024`,
-Validation Loss `0.2347`
-
-
-
-
-
 <table>
   <tr>
     <td align="center">
-      <img src="media/Nami_activation_ResNet18.png" alt="Nami" width="200px"/><br/>
+      <img src="media/Nami_activation_ResNet18.png" alt="Nami" width="210px"/><br/>
       <b>Nami</b><br/>
       <sub>
         Accuracy: <code>94.81%</code><br/>
@@ -86,7 +58,7 @@ Validation Loss `0.2347`
       </sub>
     </td>
     <td align="center">
-      <img src="media/Mish_Resnet18.png" alt="Mish" width="200px"/><br/>
+      <img src="media/Mish_Resnet18.png" alt="Mish" width="210px"/><br/>
       <b>Mish</b><br/>
       <sub>
         Accuracy: <code>94.09%</code><br/>
@@ -95,7 +67,7 @@ Validation Loss `0.2347`
       </sub>
     </td>
     <td align="center">
-      <img src="media/Swish_resnet18.png" alt="Swish" width="200px"/><br/>
+      <img src="media/Swish_resnet18.png" alt="Swish" width="210px"/><br/>
       <b>Swish</b><br/>
       <sub>
         Accuracy: <code>94.06%</code><br/>
