@@ -83,9 +83,9 @@ If I conclude, **Nami** beats **Mish** and **Swish** in both generalization and 
 ---
 
 I highly appreciate if the ML folks Fine-tune LLMs or train Deep Learning models using **Nami**, you can share the stats with me here:
----
-Mail: [Gmail](kandarpaexe@gmai.com)
-X : [X link](x.com/_kandarpasarkar)
+`Mail:` [Gmail](kandarpaexe@gmai.com), 
+`X :` [X link](x.com/_kandarpasarkar)
+
 ---
 
-Thanks for your support :)
+Thanks for your support :)*
