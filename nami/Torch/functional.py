@@ -8,4 +8,4 @@ def nami(
        a:torch.Tensor,
        b:torch.Tensor
 ):
-    return torch.where(_x > 0, torch.tanh(_x * a) , torch.sin(_x * w)/b)
+    return torch.where(_x > 0, torch.tanh(_x * a) , a * torch.sin(_x * w)/b)
