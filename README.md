@@ -1,4 +1,6 @@
 # Nami
+Official Repository for Nami: an adaptive self regulatory activation function
+
 ---
 
 <img src="media/wave.jpeg" alt="Wave" width="90%">
