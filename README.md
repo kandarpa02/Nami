@@ -1,12 +1,12 @@
 # Nami
 ---
 
-*Nami means wave in japanese, the name came from its wavy nature in the negative domain*
+<img src="media/wave.jpeg" alt="Wave" width="90%">
+
+*Nami means wave in Japanese, the name came from its wavy nature in the negative domain*
 *due to the `sin` function, rather than tending to one value like other functions*
 *`Nami` oscillates in the negative side, and has the smoothness of `tanh`. According to*
 *the training data the oscilation is maintained by three learnable parameters: `w`, `a`, `b`.*
-
-<img src="media/wave.jpeg" alt="Wave" width="90%">
 
 ---
 
