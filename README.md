@@ -1,5 +1,5 @@
 # Nami
-**Official Repository for Nami: an adaptive self regulatory activation function**
+**This is the Official Repository of Nami: an adaptive self regulatory activation function**
 
 <img src="media/wave.jpeg" alt="Wave" width="90%">
 
@@ -88,4 +88,4 @@ I highly appreciate if the ML folks Fine-tune LLMs or train Deep Learning models
 
 ---
 
-Thanks for your support :)*
+*Thanks for your support :)*
