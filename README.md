@@ -8,7 +8,9 @@
 *`Nami` oscillates in the negative side, and has the smoothness of `tanh`. According to*
 *the training data the oscilation is maintained by three learnable parameters: `w`, `a`, `b`.*
 
-- I tested **Nami**, **Swish** and **Mish** with the same weight initialization on ResNet-18, on CIFAR-10
+---
+
+I tested **Nami**, **Swish** and **Mish** with the same weight initialization on ResNet-18, on CIFAR-10
 
 ```python
 def seed_everything(seed=42):
@@ -30,7 +32,9 @@ def seed_everything(seed=42):
 seed_everything(42)
 ```
 
-- Ran the training for 200 epochs and `Nami` showed very stable looses troughout the training and especially in the later epochs and that is because of `tanh(x * a)` in the positive and `a * sin(x * w) / b` in the negative domain. it has learnable parameters `w`, `a`, `b`, which demand longer runs to learn deeper and complex information from the data.
+---
+
+Ran the training for 200 epochs and `Nami` showed very stable looses troughout the training and especially in the later epochs and that is because of `tanh(x * a)` in the positive and `a * sin(x * w) / b` in the negative domain. it has learnable parameters `w`, `a`, `b`, which demand longer runs to learn deeper and complex information from the data.
 
 - `w` is responsible for maintaining the wave-length, the smaller it is the smoother the 
     gradients are.
@@ -42,9 +46,9 @@ seed_everything(42)
 
 <img src="media/nami_equation.png" alt="nami eq" width="75%">
 
+---
 
-
-- And here are the stats:
+And here are the stats:
 
 
 <img src="media/Nami_activation_ResNet18.png" alt="Nami" width="60%">
@@ -54,6 +58,7 @@ Validation Accuracy `94.81`,
 Training Loss `0.0015`,
 Validation Loss `0.1963`
 
+---
 
 <img src="media/Mish_Resnet18.png" alt="Mish" width="60%">
 
@@ -62,6 +67,7 @@ Validation Accuracy `94.09`,
 Training Loss `0.0032`,
 Validation Loss `0.2424`
 
+---
 
 <img src="media/Swish_resnet18.png" alt="Swish" width="60%">
 
@@ -70,7 +76,16 @@ Validation Accuracy `94.06`,
 Training Loss `0.0024`,
 Validation Loss `0.2347`
 
+---
 
+If I conclude, **Nami** beats **Mish** and **Swish** in both generalization and accuracy! **Nami** is suitable for **Larger** and **Deeper** Networks. And also; for **shallow Neural Networks** it captures more complex information than any other activation. The computation cost is minimal for the fact that it has three trainable parameters, in return it shows outstanding convergence.
 
+---
 
+I highly appreciate if the ML folks Fine-tune LLMs or train Deep Learning models using **Nami**, you can share the stats with me here:
+Mail: [Gmail](kandarpaexe@gmai.com)
+X : [X link](x.com/_kandarpasarkar)
 
+---
+
+**Thanks for your support :)**
