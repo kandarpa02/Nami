@@ -10,6 +10,18 @@ Official Repository for Nami — an adaptive activation function with built-in s
 
 ---
 
+## Install
+
+```bash
+pip install git+https://github.com/kandarpa02/Nami.git
+
+```
+
+## Compatible: 
+`PyTorch ≥ 1.12`
+
+---
+
 I tested **Nami**, **Swish** and **Mish** with the same weight initialization on ResNet-18, on CIFAR-10
 
 ```python
@@ -34,15 +46,14 @@ seed_everything(42)
 
 ---
 
-Ran the training for 200 epochs and `Nami` showed very stable looses troughout the training and especially in the later epochs and that is because of `tanh(x * a)` in the positive and `a * sin(x * w) / b` in the negative domain. It has learnable parameters `w`, `a`, `b`, which demand longer runs to learn deeper and complex information from the data.
+Ran the training for 200 epochs and `Nami` showed very stable losses troughout the training and especially in the later epochs and that is because of `tanh(x * a)` in the positive and `a * sin(x * w) / b` in the negative domain. It has learnable parameters `w`, `a`, `b`, which demand longer runs to learn deeper and complex information from the data.
 
 - `w` is responsible for maintaining the wave-length, the smaller it is the smoother the 
     gradients are.
 
-- `a` regulates the spikes of the waves, high waves can capture deeper information, but if it
-    keeps rising it will cause overfitting, then `b` comes into the picture.
+- `a` regulates the spikes of the waves, high waves can capture deeper information, but if it rises too much, it may cause overfitting — that’s where `b` comes into the picture.
 
-- `b` tackles overfitting by supressing `a`'s dominance, and increses generalization.
+- `b` tackles overfitting by supressing `a`'s dominance, and increases generalization.
 
 <img src="media/nami_equation.png" alt="nami eq" width="75%">
 
@@ -78,13 +89,13 @@ Validation Loss `0.2347`
 
 ---
 
-If I conclude, **Nami** beats **Mish** and **Swish** in both generalization and accuracy! **Nami** is suitable for **Larger** and **Deeper** Networks. And also; for **shallow Neural Networks** it captures more complex information than any other activation. The computation cost is minimal for the fact that it has three trainable parameters, in return it shows outstanding convergence.
+In conclusion, **Nami** beats **Mish** and **Swish** in both generalization and accuracy! **Nami** is suitable for **Larger** and **Deeper** Networks. And also; for **shallow Neural Networks** it captures more complex information than any other activation. Despite having three trainable parameters, its computational cost remains minimal — and the convergence is outstanding.
 
 ---
 
-I highly appreciate if the ML folks Fine-tune LLMs or train Deep Learning models using **Nami**, you can share the stats with me here:
-[Gmail](kandarpaexe@gmai.com)
-[X link](x.com/_kandarpasarkar)
+"I'd love to see ML folks fine-tune LLMs or train deep models using **Nami**, you can share the stats with me here:
+[Gmail](kandarpaexe@gmai.com), 
+[X](x.com/_kandarpasarkar)
 
 ---
 
