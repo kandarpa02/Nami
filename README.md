@@ -1,7 +1,7 @@
 # Nami
 **Official Repository for Nami: an adaptive self regulatory activation function**
 
-<img src="media/wave.jpeg" alt="Wave" width="100%">
+<img src="media/wave.jpeg" alt="Wave" width="90%">
 
 *Nami means wave in japanese, the name came from its wavy nature in the negative domain*
 *due to the `sin` function, rather than tending to one value like other functions*
@@ -47,7 +47,7 @@ seed_everything(42)
 - And here are the stats:
 
 
-<img src="media/Nami_activation_ResNet18.png" alt="Nami" width="40%">
+<img src="media/Nami_activation_ResNet18.png" alt="Nami" width="60%">
 
 **Nami**: 
 Validation Accuracy `94.81`,
@@ -55,15 +55,15 @@ Training Loss `0.0015`,
 Validation Loss `0.1963`
 
 
-<img src="media/Mish_Resnet18.png" alt="Mish" width="40%"> **Mish**:
-                                                            Validation Accuracy `94.09`,
-                                                            Training Loss `0.0032`,
-                                                            Validation Loss `0.2424`
+<img src="media/Mish_Resnet18.png" alt="Mish" width="60%">
+
+**Mish**:
+Validation Accuracy `94.09`,
+Training Loss `0.0032`,
+Validation Loss `0.2424`
 
 
-
-
-<img src="media/Swish_resnet18.png" alt="Swish" width="40%">
+<img src="media/Swish_resnet18.png" alt="Swish" width="60%">
 
 **Swish/SiLU**:
 Validation Accuracy `94.06`,
