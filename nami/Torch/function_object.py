@@ -21,10 +21,21 @@ class Nami(nn.Module):
 
     def __init__(self, w_init=0.3, a_init = 1.0, b_init = 1.5, learnable=True):
         super().__init__()
-        self.w = w_init
-        self.a = a_init
-        self.b = b_init
         self.learnable = learnable
+        if self.learnable:
+            self.w = nn.Parameter(torch.tensor(w_init))
+            self.a = nn.Parameter(torch.tensor(a_init))
+            self.b = nn.Parameter(torch.tensor(b_init))
+        else:
+            self.w = torch.tensor(w_init)
+            self.a = torch.tensor(a_init)
+            self.b = torch.tensor(b_init)
+
 
     def forward(self, x):
-        nami(x, w_init=self.w, a_init=self.a, b_init=self.b, learnable=self.learnable)
+
+        w = torch.clamp(self.w, min=0.1, max=0.5)
+        a = torch.clamp(self.a, min=0.5, max=3.0)
+        b = torch.clamp(self.b, min=0.5, max=3.0)
+
+        return nami(_x=x, w=self.w, a=self.a, b=self.b)
