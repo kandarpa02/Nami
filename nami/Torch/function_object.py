@@ -1,14 +1,8 @@
-import torch
 import torch.nn as nn
+import torch
+from nami.Torch.functional import nami
 
-@torch.jit.script
-def nami(
-       _x:torch.Tensor,
-       w_init=0.3,
-       a_init=1.0,
-       b_init=1.5,
-       learnable = True
-):
+class Nami(nn.Module):
     '''
     Nami means wave in japanese, the name came from its wavy nature in the negative domain
     due to the `sin` function, rather than tending to one value like other functions
@@ -24,18 +18,13 @@ def nami(
     `b` tackles overfitting by supressing `a`'s dominance, and increses generalization.
 
     '''
-    
-    if learnable:
-            w = nn.Parameter(torch.tensor(w_init))
-            a = nn.Parameter(torch.tensor(a_init))
-            b = nn.Parameter(torch.tensor(b_init))
-    else:
-        w = torch.tensor(w_init)
-        a = torch.tensor(a_init)
-        b = torch.tensor(b_init)
 
-    w = torch.clamp(w, min=0.1, max=0.5)
-    b = torch.clamp(b, min=0.5, max=3.0)
-    a = torch.clamp(a, min=0.5, max=3.0)
+    def __init__(self, w_init=0.3, a_init = 1.0, b_init = 1.5, learnable=True):
+        super().__init__()
+        self.w = w_init
+        self.a = a_init
+        self.b = b_init
+        self.learnable = learnable
 
-    return torch.where(_x > 0, torch.tanh(_x * a) , torch.sin(_x * w)/b)
+    def forward(self, x):
+        nami(x, w_init=self.w, a_init=self.a, b_init=self.b, learnable=self.learnable)
