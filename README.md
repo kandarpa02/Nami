@@ -1,12 +1,14 @@
 # Nami
-**This is the Official Repository of Nami: an adaptive self regulatory activation function**
+**This is the Official Repository for Nami: an adaptive self regulatory activation function**
 
-<img src="media/wave.jpeg" alt="Wave" width="90%">
+---
 
 *Nami means wave in japanese, the name came from its wavy nature in the negative domain*
 *due to the `sin` function, rather than tending to one value like other functions*
 *`Nami` oscillates in the negative side, and has the smoothness of `tanh`. According to*
 *the training data the oscilation is maintained by three learnable parameters: `w`, `a`, `b`.*
+
+<img src="media/wave.jpeg" alt="Wave" width="90%">
 
 ---
 
@@ -83,9 +85,9 @@ If I conclude, **Nami** beats **Mish** and **Swish** in both generalization and 
 ---
 
 I highly appreciate if the ML folks Fine-tune LLMs or train Deep Learning models using **Nami**, you can share the stats with me here:
-`Mail:` [Gmail](kandarpaexe@gmai.com), 
-`X :` [X link](x.com/_kandarpasarkar)
+[Gmail](kandarpaexe@gmai.com)
+[X link](x.com/_kandarpasarkar)
 
 ---
 
-*Thanks for your support :)*
+**Thanks for your support :)**
