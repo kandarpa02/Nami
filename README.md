@@ -1,6 +1,4 @@
 # Nami
-**This is the Official Repository for Nami: an adaptive self regulatory activation function**
-
 ---
 
 *Nami means wave in japanese, the name came from its wavy nature in the negative domain*
