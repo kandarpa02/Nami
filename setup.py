@@ -11,7 +11,6 @@ setup(
     url="https://github.com/kandarpa02/cpy-deriv.git",
     packages=find_packages(),
     python_requires=">=3.8",
-    install_requires = ["torch"],
     classifiers=[
         "Programming Language :: Python :: 3",
         "Operating System :: OS Independent",
