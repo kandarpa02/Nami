@@ -1,0 +1,1 @@
+from nami.TF.function_object import Nami
