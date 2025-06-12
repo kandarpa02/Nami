@@ -6,6 +6,7 @@ try:
 except:
     raise ImportError("PyTorch is not installed")
 
+
 class Nami(nn.Module):
     '''
     PyTorch implementation of Nami
@@ -20,27 +21,27 @@ class Nami(nn.Module):
         a: Controls amplitude of wave
         b: Regulates overfitting by suppressing a
         learnable: Whether parameters are trainable
+    
+
     '''
 
-    def __init__(self, w_init=0.3, a_init=1.0, b_init=1.5, learnable=True):
+    def __init__(self, w_init=0.3, a_init = 1.0, b_init = 1.5, learnable=True):
         super().__init__()
         self.learnable = learnable
         if self.learnable:
-            self.w = nn.Parameter(torch.tensor(w_init, dtype=torch.float32))
-            self.a = nn.Parameter(torch.tensor(a_init, dtype=torch.float32))
-            self.b = nn.Parameter(torch.tensor(b_init, dtype=torch.float32))
+            self.w = nn.Parameter(torch.tensor(w_init))
+            self.a = nn.Parameter(torch.tensor(a_init))
+            self.b = nn.Parameter(torch.tensor(b_init))
         else:
-            self.register_buffer('w', torch.tensor(w_init, dtype=torch.float32))
-            self.register_buffer('a', torch.tensor(a_init, dtype=torch.float32))
-            self.register_buffer('b', torch.tensor(b_init, dtype=torch.float32))
+            self.w = torch.tensor(w_init)
+            self.a = torch.tensor(a_init)
+            self.b = torch.tensor(b_init)
+
 
     def forward(self, x):
-        orig_dtype = x.dtype
-        x = x.to(torch.float32)
 
-        w = torch.clamp(self.w, min=0.1, max=0.5).to(torch.float32)
-        a = torch.clamp(self.a, min=0.5, max=3.0).to(torch.float32)
-        b = torch.clamp(self.b, min=0.5, max=3.0).to(torch.float32)
+        w = torch.clamp(self.w, min=0.1, max=0.5)
+        a = torch.clamp(self.a, min=0.5, max=3.0)
+        b = torch.clamp(self.b, min=0.5, max=3.0)
 
-        out = nami(_x=x, w=w, a=a, b=b)
-        return out.to(orig_dtype)
+        return nami(_x=x, w=self.w, a=self.a, b=self.b)
