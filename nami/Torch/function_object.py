@@ -39,9 +39,4 @@ class Nami(nn.Module):
 
 
     def forward(self, x):
-
-        w = torch.clamp(self.w, min=0.1, max=0.5)
-        a = torch.clamp(self.a, min=0.5, max=3.0)
-        b = torch.clamp(self.b, min=0.5, max=3.0)
-
         return nami(_x=x, w=self.w, a=self.a, b=self.b)
