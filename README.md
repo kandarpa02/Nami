@@ -59,7 +59,8 @@ Ran the training for 200 epochs and `Nami` showed very stable losses troughout t
 
 ---
 
-And here are the stats:
+More detailed and complex tests are here: [!benchmarks](benchmarks)
+Here is a sample benchmark on Resnet18:
 
 
 <img src="media/Nami_activation_ResNet18.png" alt="Nami" width="60%">
