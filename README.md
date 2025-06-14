@@ -47,16 +47,15 @@ Jax (needs some fixes)
 
 ## Nami vs Others
 
-<img src="media/Nami_others_plot.png" alt="Wave" width="90%">
+<img src="media/Nami_others_plot.png" alt="Wave" width="80%">
 
-
----
-
-**Detailed and complex tests are here** [benchmarks](benchmarks)
+- Nami consistently leads in high-impact learning phases (e.g., around LR drops), emphasizing its adaptability.
+- This resilience is not observed in traditional activations that either saturate early or destabilize under aggressive scheduling.
 
 ---
 
-Here is a quick comparison of **Nami**, **Swish** and **Mish** with the same weight initialization on ResNet-18, on CIFAR-10
+
+Here is a quick comparison of **Nami**, **Swish** and **Mish** with the same weight initialization on ResNet-18, on CIFAR-10, **Detailed and complex tests are here** [benchmarks](benchmarks)
 
 ```python
 def seed_everything(seed=42):
