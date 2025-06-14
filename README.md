@@ -12,6 +12,10 @@ Official Repository for Nami — an adaptive activation function with built-in s
 
 ## Install
 
+<img src="media/Nami_others_plot.png" alt="Wave" width="90%">
+
+---
+
 ```bash
 pip install git+https://github.com/kandarpa02/Nami.git
 
@@ -42,6 +46,11 @@ TensorFlow
 Jax (needs some fixes)
 
 ```
+
+---
+
+## Nami vs Others
+
 
 ---
 
