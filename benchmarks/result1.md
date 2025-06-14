@@ -14,9 +14,7 @@
 
 ## Activation Function Derivative
 
-<div align="center">
-  <img src="benchmarks/results1/Nami_derivative.png" style="width:80%;" />
-</div>
+![Nami Derivative](benchmarks/results1/Nami_derivative.png)
 
 Nami's formulation allows for a smooth and bounded derivative, enabling more stable backpropagation and faster convergence compared to Mish and Swish.
 
@@ -32,9 +30,7 @@ Nami's formulation allows for a smooth and bounded derivative, enabling more sta
 
 Nami consistently reaches higher top-1 accuracy earlier and maintains an edge through to the final epoch.
 
-<div align="center">
-  <img src="benchmarks/results1/Vt1_acc_epoch.png" style="width:80%;" />
-</div>
+![Top-1 Accuracy](benchmarks/results1/Vt1_acc_epoch.png)
 
 ---
 
@@ -47,13 +43,9 @@ Nami exhibits a smoother and steeper drop in training loss, indicating better co
 | 50    | **1.08**           | 1.11              | 1.28                |
 | 100   | **0.66**           | 0.76              | 0.83                |
 
-<div align="center">
-  <img src="benchmarks/results1/T_loss_vs_epoch.png" style="width:80%;" />
-</div>
+![Training Loss](benchmarks/results1/T_loss_vs_epoch.png)
 
-<div align="center">
-  <img src="benchmarks/results1/V_loss_vs_epoch.png" style="width:80%;" />
-</div>
+![Validation Loss](benchmarks/results1/V_loss_vs_epoch.png)
 
 ---
 
@@ -61,17 +53,13 @@ Nami exhibits a smoother and steeper drop in training loss, indicating better co
 
 Nami achieves faster gains in early epochs while retaining higher final accuracy.
 
-<div align="center">
-  <img src="benchmarks/results1/Tt_acc_epoch.png" style="width:80%;" />
-</div>
+![Training Top-1 Accuracy](benchmarks/results1/Tt_acc_epoch.png)
 
 ---
 
 ### Comparative Plot
 
-<div align="center">
-  <img src="benchmarks/results1/Nami_vs_others_plot.png" style="width:80%;" />
-</div>
+![Nami vs Mish vs Swish](benchmarks/results1/Nami_vs_others_plot.png)
 
 This consolidated plot highlights Nami’s consistent performance advantage across the entire training process.
 
