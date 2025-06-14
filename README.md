@@ -45,12 +45,13 @@ Jax (needs some fixes)
 
 ---
 
-## Nami vs Others
-
-<img src="media/Nami_others_plot.png" alt="Wave" width="80%">
+## Nami vs Others: Visuals
 
 - Nami consistently leads in high-impact learning phases (e.g., around LR drops), emphasizing its adaptability.
 - This resilience is not observed in traditional activations that either saturate early or destabilize under aggressive scheduling.
+
+
+<img src="media/Nami_others_plot.png" alt="Wave" width="80%">
 
 ---
 
