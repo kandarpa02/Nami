@@ -1,4 +1,4 @@
-# Elevating Neural Networks with Nami: Comparative Evaluation on ResNet50 and CIFAR-100
+# Nami vs Other Functions: Comparative Evaluation on ResNet50 and CIFAR-100
 
 ## Executive Summary
 
