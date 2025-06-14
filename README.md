@@ -17,12 +17,39 @@ pip install git+https://github.com/kandarpa02/Nami.git
 
 ```
 
+## Usage
+
+```python
+# for torch
+from nami import Torch.Nami
+nami_torch = Torch.Nami()
+
+# for tensorflow
+from nami import TF.Nami
+nami_tf = TF.Nami()
+
+# for jax
+from nami import JAX.Nami
+nami_jax = JAX.Nami()
+```
+
+
 ## Compatible: 
-`PyTorch ≥ 1.12`
+
+```bash
+PyTorch
+TensorFlow
+Jax (needs some fixes)
+
+```
 
 ---
 
-I tested **Nami**, **Swish** and **Mish** with the same weight initialization on ResNet-18, on CIFAR-10
+**Detailed and complex tests are here** [benchmarks](benchmarks)
+
+---
+
+Here is a quick comparison of **Nami**, **Swish** and **Mish** with the same weight initialization on ResNet-18, on CIFAR-10
 
 ```python
 def seed_everything(seed=42):
@@ -56,10 +83,6 @@ Ran the training for 200 epochs and `Nami` showed very stable losses troughout t
 - `b` tackles overfitting by supressing `a`'s dominance, and increases generalization.
 
 <img src="media/nami_equation.png" alt="nami eq" width="75%">
-
----
-
-More detailed and complex tests are here [benchmarks](benchmarks)
 
 ---
 
