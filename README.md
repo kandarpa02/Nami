@@ -45,18 +45,26 @@ Jax (needs some fixes)
 
 ---
 
-## Nami vs Others: Visuals
+## Plots:
+
+### Nami vs Others:
 
 - Nami consistently leads in high-impact learning phases (e.g., around LR drops), emphasizing its adaptability.
 - This resilience is not observed in traditional activations that either saturate early or destabilize under aggressive scheduling.
 
+<img src="media/Nami_others_plot.png" alt="nami_vs_others" width="80%">
 
-<img src="media/Nami_others_plot.png" alt="Wave" width="80%">
+### Derivative of Nami:
+
+- **Nami’s derivative exhibits a non-monotonic, softly saturating profile**—a design that diversifies gradient propagation and avoids neuron inactivation.
+- Its flexible form enables localized feature modulation, especially beneficial in deep architectures where gradient dynamics are critical.
+
+<img src="media/Nami_derivative.png" alt="derivative of nami" width="80%">
 
 ---
 
 
-Here is a quick comparison of **Nami**, **Swish** and **Mish** with the same weight initialization on ResNet-18, on CIFAR-10, **Detailed and complex tests are here** [benchmarks](benchmarks)
+Here is a quick comparison of **Nami**, **Swish** and **Mish** with the same weight initialization on ResNet-18, on CIFAR-10, ***More Detailed and complex tests are here*** [benchmarks](benchmarks)
 
 ```python
 def seed_everything(seed=42):
