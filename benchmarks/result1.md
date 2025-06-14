@@ -68,15 +68,15 @@ This report presents a comparative study of activation functions—**Nami**, Mis
 
 ### 3. Architectural Innovation: Nami
 
-![Nami Derivative](results1/Nami_derivative.png)
-
-- **Nami’s derivative exhibits a non-monotonic, softly saturating profile**—a design that diversifies gradient propagation and avoids neuron inactivation.
-- Its flexible form enables localized feature modulation, especially beneficial in deep architectures where gradient dynamics are critical.
-
 ![Nami Comparison](results1/Nami_vs_others_plot.png)
 
 - Nami consistently leads in high-impact learning phases (e.g., around LR drops), emphasizing its adaptability.
 - This resilience is not observed in traditional activations that either saturate early or destabilize under aggressive scheduling.
+
+![Nami Derivative](results1/Nami_derivative.png)
+
+- **Nami’s derivative exhibits a non-monotonic, softly saturating profile**—a design that diversifies gradient propagation and avoids neuron inactivation.
+- Its flexible form enables localized feature modulation, especially beneficial in deep architectures where gradient dynamics are critical.
 
 ## Observations and Insights
 
