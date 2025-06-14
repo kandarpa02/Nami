@@ -64,7 +64,7 @@ Jax (needs some fixes)
 ---
 
 
-Here is a quick comparison of **Nami**, **Swish** and **Mish** with the same weight initialization on ResNet-18, on CIFAR-10, ***More Detailed and complex tests are here*** [benchmarks](benchmarks)
+Here is a quick comparison of **Nami**, **Swish** and **Mish** with the same weight initialization on ResNet-18, on CIFAR-10, **More Detailed and complex tests are here** [benchmarks](benchmarks)
 
 ```python
 def seed_everything(seed=42):
@@ -131,7 +131,7 @@ Validation Loss `0.2347`
 
 ---
 
-In conclusion, **Nami** beats **Mish** and **Swish** in both generalization and accuracy! **Nami** is suitable for **Larger** and **Deeper** Networks. And also; for **shallow Neural Networks** it captures more complex information than any other activation. Despite having three trainable parameters, its computational cost remains minimal — and the convergence is outstanding.
+In conclusion, **Nami** beats **Mish** and **Swish** in both generalization and accuracy! **Nami** is suitable for **Larger** and **Deeper** Networks. And also; for **shallow Neural Networks** it captures more complex information than any other activation. Despite having three trainable parameters, its computational cost remains minimal — and the convergence is outstanding. For **more detailed** experiments visit [benchmarks](benchmarks).
 
 ---
 
