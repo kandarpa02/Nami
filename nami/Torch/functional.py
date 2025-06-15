@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 
-# @torch.jit.script
+@torch.jit.script
 def nami(_x: torch.Tensor, w: torch.Tensor, a: torch.Tensor, b: torch.Tensor):
     orig_dtype = _x.dtype
     _x = _x.to(torch.float32)
