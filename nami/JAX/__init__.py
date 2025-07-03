@@ -1,0 +1,1 @@
+from .function_object import Nami
