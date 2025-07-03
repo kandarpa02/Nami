@@ -13,7 +13,7 @@ Official Repository for Nami — an adaptive activation function with built-in s
 ## Install
 
 ```bash
-pip install git+https://github.com/kandarpa02/Nami.git
+pip install nami-act
 
 ```
 
