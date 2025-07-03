@@ -1,8 +1,8 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="Nami",
-    version="0.0.1",
+    name="nami_act",
+    version="1.0.0",
     author="Kandarpa Sarkar",
     author_email="kandarpaexe@gmail.com",
     description="Official Repository for Nami: an adaptive self regulatory activation function",
@@ -14,15 +14,11 @@ setup(
         exclude=["nami.Torch.functional"]
     ),
     python_requires=">=3.8",
-    extras_require={
-        "tf": ["tensorflow>=2.0.0"],
-        "torch": ["torch>=1.9.0"],
-        "dev": ["tensorflow>=2.0.0", "torch>=1.9.0"]
-    },
     classifiers=[
         "Programming Language :: Python :: 3",
         "Operating System :: OS Independent",
         "Topic :: Scientific/Engineering :: Mathematics",
     ],
     zip_safe=False,
+    
 )
