@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="nami_act",
-    version="1.1.0",
+    version="1.1.1",
     author="Kandarpa Sarkar",
     author_email="kandarpaexe@gmail.com",
     description="Official Repository for Nami: an adaptive self regulatory activation function",

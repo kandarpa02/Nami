@@ -1,7 +1,7 @@
 try:
     import jax
     import jax.numpy as jnp
-    import hauku as hk
+    import haiku as hk
 except:
     raise ImportError("JAX/Haiku is not installed")
 
