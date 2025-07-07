@@ -28,9 +28,13 @@ nami_torch = Torch.Nami()
 from nami import TF.Nami
 nami_tf = TF.Nami()
 
-# for jax
-from nami import JAX.Nami
-nami_jax = JAX.Nami()
+# for jax there are two modules 
+# one is nami function another is Nami object for Haiku
+# if someone uses flax they can simply wrap the functional
+# module with flax.nn.Module
+
+from nami.JAX import nami, Nami 
+
 ```
 
 
